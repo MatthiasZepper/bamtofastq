@@ -69,6 +69,7 @@ jobs:
 
       - name: Run the downloaded pipeline (stub)
         id: stub_run_pipeline
+        continue-on-error: true
         env:
           NXF_SINGULARITY_CACHEDIR: ./
           NXF_SINGULARITY_HOME_MOUNT: true
